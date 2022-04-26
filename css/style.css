@@ -1,0 +1,574 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../assets/img/steam.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans";
+    position: relative;
+}
+
+/* <!----------------------------------------// BODY SECCIONES //----------------------------------------> */
+.body {
+    background: url(../assets/img/fondo_steam_2.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans";
+
+
+}
+
+.div__logo img {
+    width: 50%;
+}
+
+/* <!----------------------------------------// Inicio //----------------------------------------> */
+
+.main {
+    position: fixed;
+    top: 55%;
+    left: 46%;
+
+}
+
+.home__descarga a {
+    text-decoration: none;
+    transition-duration: 1s;
+    font-size: x-large;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* <!----------------------------------------// Footer //----------------------------------------> */
+
+
+.div__footer {
+
+    position: fixed;
+    width: 100vw;
+    top: 97%;
+    color: azure;
+
+}
+
+.img__footer {
+    position: fixed;
+    left: 95%;
+
+}
+
+.img__footer1 {
+    position: fixed;
+    left: 92%;
+
+}
+
+/* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
+
+.comunidad {
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+
+.h1__comunidad {
+    font-size: xx-large;
+    color: white;
+}
+
+.h2__comunidad {
+    font-size: medium;
+    color: white;
+}
+
+.busqueda__comunidad {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 30px 1px;
+    gap: 30%;
+
+}
+
+.p__comunidad {
+    height: 70%;
+}
+
+.p__comunidad input {
+    width: 170%;
+    background-color: rgb(255, 255, 255);
+}
+
+.p__comunidad2 input {
+    width: 170%;
+}
+
+.boton__comunidad {
+    width: 150%;
+    height: 80%;
+    background-color: bisque;
+}
+
+.boton__comunidad a {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(2, 7, 255);
+}
+
+/* <!----------------------------------------// TIENDA //----------------------------------------> */
+
+.section__tienda:hover {
+    display: grid;
+    justify-items: center;
+    gap: 30%;
+    transition-duration: 5s;
+
+
+}
+
+
+.section__tienda p {
+    background-color: rgb(70, 11, 158);
+    width: 100%;
+    text-align: center;
+    transition-duration: 5s;
+}
+
+.section__busqueda {
+
+    margin-top: 5%;
+    transition-duration: 5s;
+
+
+}
+
+.imput__tienda--barra {
+    width: 50%;
+
+}
+
+.tienda__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1%;
+
+
+}
+
+/* <!----------------------------------------// QUIENES SOMOS //----------------------------------------> */
+
+.nav__logo--quienes {
+    margin-top: 10%;
+    height: 50%;
+
+}
+
+.nav__logo--quienes img {
+    margin-left: 10%;
+}
+
+.quienes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-start: 1;
+}
+
+.h1__quienes {
+    grid-column-start: 1;
+    color: azure;
+    margin-left: 10%;
+}
+
+.h2__quienes {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: large;
+    text-align: center;
+    background-color: rgba(135, 183, 222, 0.384);
+    border: solid blue;
+    margin-left: 15%;
+    height: 100%;
+    width: 70%;
+
+}
+
+.botton__somos {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    margin-left: 35%;
+    height: 40%;
+    width: 30%;
+    background-color: rgb(42, 151, 165);
+    text-decoration: none;
+    margin-top: 5%;
+
+}
+
+.botton__somos a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.home__boton--quienes {
+    grid-column-start: 1;
+    margin-top: 20%;
+    margin-left: 40%;
+
+
+}
+
+.home__boton--quienes .home__descarga {
+    padding: 15px 32px;
+    background-color: rgb(105, 0, 0);
+}
+
+.home__boton--quienes .home__descarga a {
+    background-color: rgba(165, 42, 42, 0);
+    font-size: x-large
+}
+
+/* <!----------------------------------------// AYUDA //----------------------------------------> */
+
+.ayuda {
+    background-color: rgba(0, 242, 250, 0.205);
+
+
+
+
+}
+
+.h1__ayuda {
+    margin-left: 10%;
+    color: rgb(240, 248, 255);
+
+
+}
+
+.h2__ayuda {
+    color: aliceblue;
+    font-size: medium;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.div {
+    text-align: center;
+
+}
+
+.div__input {
+
+    width: 75%;
+
+}
+
+.form {
+
+    text-align: center;
+    color: rgb(235, 243, 237);
+}
+
+/* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
+
+.section__sesion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+    color: aliceblue;
+    font-size: larger;
+
+}
+
+.p__olvidado a {
+    color: aliceblue;
+}
+
+.p__terminos {
+    font-size: medium
+}
+
+
+
+/*-----------------------MEDIA QUERIE--------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+
+    /* <!----------------------------------------// TIENDA //----------------------------------------> */
+
+
+
+    .section__tienda {
+        display: grid;
+        justify-items: center;
+
+        gap: 5%;
+    }
+
+    .section__busqueda {
+        padding-top: 6%;
+    }
+
+
+    .tienda__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1%;
+    }
+
+
+    /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
+    .busqueda__comunidad {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 30%;
+        margin: 60px 1px;
+        gap: 30%;
+
+    }
+
+    .busqueda__comunidad p{
+        right: 20%;
+        position: relative;
+    }
+
+    .h1__comunidad {
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+
+
+    }
+
+    .h2__comunidad {
+        font-size: large;
+        color: white;
+        text-align: center;
+
+    }
+
+    /* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
+
+    .section__sesion {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 5%;
+        text-align: center;
+        color: aliceblue;
+        font-size: larger;
+    }
+
+    .main__cuenta {
+        margin-top: -5%;
+    }
+
+    .p__olvidado a {
+        color: aliceblue;
+    }
+
+    .p__terminos {
+        font-size: medium
+    }
+
+        /* <!----------------------------------------// QUIENES_SOMOS //----------------------------------------> */
+
+        .quienes {
+            justify-items: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1%;
+    
+        }
+        
+        .h1__quienes {
+            display: flex;
+            grid-row-start: 2;
+            grid-column-start: 1;
+            color: azure;
+            font-size: medium;
+    
+        }
+    
+        .h2__quienes {
+            font-size: small;
+            text-align: center;
+            color: aliceblue;
+            grid-column-start: 1;
+            background-color: rgba(135, 183, 222, 0.384);
+            border: solid blue;
+            grid-row-start: 2;
+            margin-left: 10%;
+            height: 60%;
+            margin-top: 13%;
+            width: 60%;
+    
+        }
+    
+        .botton__somos {
+            grid-column-start: 1;
+            grid-row-start: 4;
+            height: 100%;
+            width: 30%;
+            margin-right: 30%;
+            margin-top: 4%;
+            background-color: rgb(42, 151, 165);
+            text-decoration: none;
+        }
+    
+        .botton__somos a {
+            text-decoration: none;
+            color: aliceblue;
+    
+        }
+    
+        .home__boton--quienes {
+            display: flex;
+            position: relative;
+            justify-items: center;
+            right: 19%;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            height: 15%;
+            width: 30%;
+            top: -50%;
+    
+    
+        }
+    
+        .home__boton--quienes .home__descarga a {
+            font-size: medium;
+            color: aliceblue;
+    
+        }
+    
+    
+        .home__boton--quienes .home__descarga {
+            background-color: rgb(109, 1, 1);
+            margin-top: -11%;
+            margin-left: 15%;
+    
+        }
+
+
+
+
+    body {
+        background: url(../assets/img/steam33.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: "Open Sans";
+        position: relative;
+    }
+
+}
+
+/*-----------------------MEDIA QUERIE--------------------------------------------*/
+
+@media only screen and (max-width: 567px) {
+
+    body {
+        background: url(../assets/img/steamcelular.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: "Open Sans";
+        position: relative;
+    }
+
+    /* <!----------------------------------------// TIENDA //----------------------------------------> */
+
+
+    .section__tienda {
+        display: grid;
+        justify-items: center;
+
+    }
+
+    .tienda__items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1%;
+    }
+
+        .section__sesion {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 5%;
+        text-align: center;
+        color: aliceblue;
+        font-size: larger;
+    }
+
+    .main__cuenta {
+        margin-top: -20%;
+    }
+
+    .p__olvidado a {
+        color: aliceblue;
+    }
+
+    .p__terminos {
+        font-size: medium
+    }
+
+        /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
+        .busqueda__comunidad {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30%;
+    
+        }
+        
+        .busqueda__comunidad p{
+            position:relative;
+            right: 30%;
+        }
+        .h1__comunidad {
+
+            font-size: xx-large;
+            color: white;
+            text-align: center;
+    
+    
+        }
+    
+        .h2__comunidad {
+            font-size: large;
+            color: white;
+            text-align: center;
+    
+        }
+
+        .div__boton{
+            position: relative;
+            right: 5%;
+            grid-row-start: 3;
+        }
+}
