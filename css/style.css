@@ -33,20 +33,26 @@ body {
 
 /* <!----------------------------------------// Inicio //----------------------------------------> */
 
-.main {
+
+.home__boton {
     position: fixed;
-    top: 55%;
     left: 46%;
+    top: 55%;
 
 }
+
+
+
 
 .home__descarga a {
     text-decoration: none;
     transition-duration: 1s;
     font-size: x-large;
     color: black;
+
     background-color: rgb(255, 255, 255);
 }
+
 
 
 
@@ -103,7 +109,7 @@ body {
 }
 
 .p__comunidad {
-    height: 70%;
+    height: 40%;
 }
 
 .p__comunidad input {
@@ -118,38 +124,41 @@ body {
 .boton__comunidad {
     width: 150%;
     height: 80%;
-    background-color: bisque;
+    background-color: rgba(0, 4, 247, 0.39);
+    border-radius: 50%;
 }
 
 .boton__comunidad a {
     text-decoration: none;
     font-size: large;
-    color: rgb(2, 7, 255);
+    color: rgb(255, 255, 255);
+
 }
+
+
 
 /* <!----------------------------------------// TIENDA //----------------------------------------> */
 
-.section__tienda:hover {
+
+
+.section__tienda{
     display: grid;
     justify-items: center;
     gap: 30%;
-    transition-duration: 5s;
-
+    
 
 }
 
 
 .section__tienda p {
-    background-color: rgb(70, 11, 158);
+    background-color: rgba(70, 11, 158, 0.288);
     width: 100%;
     text-align: center;
-    transition-duration: 5s;
 }
 
 .section__busqueda {
 
     margin-top: 5%;
-    transition-duration: 5s;
 
 
 }
@@ -194,52 +203,22 @@ body {
 
 .h2__quienes {
     grid-column-start: 2;
-    grid-row-start: 2;
-    font-size: large;
+    grid-row-start: 2
+    ;
+    font-size: larger;
     text-align: center;
-    background-color: rgba(135, 183, 222, 0.384);
-    border: solid blue;
+    color: aliceblue;
     margin-left: 15%;
     height: 100%;
     width: 70%;
 
 }
 
-.botton__somos {
-    grid-column-start: 2;
-    grid-row-start: 3;
-    margin-left: 35%;
-    height: 40%;
-    width: 30%;
-    background-color: rgb(42, 151, 165);
-    text-decoration: none;
-    margin-top: 5%;
-
+.boton__descarga {
+    margin-left: 30%;
 }
 
-.botton__somos a {
-    text-decoration: none;
-    color: aliceblue;
 
-}
-
-.home__boton--quienes {
-    grid-column-start: 1;
-    margin-top: 20%;
-    margin-left: 40%;
-
-
-}
-
-.home__boton--quienes .home__descarga {
-    padding: 15px 32px;
-    background-color: rgb(105, 0, 0);
-}
-
-.home__boton--quienes .home__descarga a {
-    background-color: rgba(165, 42, 42, 0);
-    font-size: x-large
-}
 
 /* <!----------------------------------------// AYUDA //----------------------------------------> */
 
@@ -304,6 +283,9 @@ body {
     font-size: medium
 }
 
+select{
+    margin-left: 25%;
+}
 
 
 /*-----------------------MEDIA QUERIE--------------------------------------------*/
@@ -314,10 +296,9 @@ body {
 
 
 
-    .section__tienda {
+    .section__tienda{
         display: grid;
         justify-items: center;
-
         gap: 5%;
     }
 
@@ -346,7 +327,7 @@ body {
 
     }
 
-    .busqueda__comunidad p{
+    .busqueda__comunidad p {
         right: 20%;
         position: relative;
     }
@@ -390,85 +371,8 @@ body {
         font-size: medium
     }
 
-        /* <!----------------------------------------// QUIENES_SOMOS //----------------------------------------> */
+    /* <!----------------------------------------// QUIENES_SOMOS //----------------------------------------> */
 
-        .quienes {
-            justify-items: center;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 1%;
-    
-        }
-        
-        .h1__quienes {
-            display: flex;
-            grid-row-start: 2;
-            grid-column-start: 1;
-            color: azure;
-            font-size: medium;
-    
-        }
-    
-        .h2__quienes {
-            font-size: small;
-            text-align: center;
-            color: aliceblue;
-            grid-column-start: 1;
-            background-color: rgba(135, 183, 222, 0.384);
-            border: solid blue;
-            grid-row-start: 2;
-            margin-left: 10%;
-            height: 60%;
-            margin-top: 13%;
-            width: 60%;
-    
-        }
-    
-        .botton__somos {
-            grid-column-start: 1;
-            grid-row-start: 4;
-            height: 100%;
-            width: 30%;
-            margin-right: 30%;
-            margin-top: 4%;
-            background-color: rgb(42, 151, 165);
-            text-decoration: none;
-        }
-    
-        .botton__somos a {
-            text-decoration: none;
-            color: aliceblue;
-    
-        }
-    
-        .home__boton--quienes {
-            display: flex;
-            position: relative;
-            justify-items: center;
-            right: 19%;
-            grid-column-start: 1;
-            grid-row-start: 2;
-            height: 15%;
-            width: 30%;
-            top: -50%;
-    
-    
-        }
-    
-        .home__boton--quienes .home__descarga a {
-            font-size: medium;
-            color: aliceblue;
-    
-        }
-    
-    
-        .home__boton--quienes .home__descarga {
-            background-color: rgb(109, 1, 1);
-            margin-top: -11%;
-            margin-left: 15%;
-    
-        }
 
 
 
@@ -483,6 +387,27 @@ body {
         position: relative;
     }
 
+    /* <!----------------------------------------// Footer //----------------------------------------> */
+
+
+    footer {
+        width: 100vw;
+        padding: 1%;        
+        background-color: rgb(0, 38, 255);
+        position: fixed;       
+        bottom: 0%;
+
+    }
+
+
+    .div__footer {
+
+        position: fixed;
+        width: 100vw;
+        top: 97%;
+        color: azure;
+
+    }
 }
 
 /*-----------------------MEDIA QUERIE--------------------------------------------*/
@@ -514,7 +439,7 @@ body {
         gap: 1%;
     }
 
-        .section__sesion {
+    .section__sesion {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -536,39 +461,109 @@ body {
         font-size: medium
     }
 
-        /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
-        .busqueda__comunidad {
-            display: grid;
-            justify-items: center;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 30%;
-    
-        }
+    /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
+    .busqueda__comunidad {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30%;
+
+    }
+
+    .busqueda__comunidad p {
+        position: relative;
+        right: 30%;
+    }
+
+    .h1__comunidad {
+
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+
+
+    }
+
+    .h2__comunidad {
+        font-size: large;
+        color: white;
+        text-align: center;
+
+    }
+
+    .div__boton {
+        position: relative;
+        right: 5%;
+        grid-row-start: 2;
+        padding: 20%;
+    }
+
+    /* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
+
+    /* .main__cuenta .continuar {
+        background-color: azure;
+    } */
+
+
+
+    /* <!----------------------------------------// Footer //----------------------------------------> */
+
+
+
+    footer {
+        width: 100vw;                
+        background-color: rgb(0, 38, 255);
+        position: absolute;
         
-        .busqueda__comunidad p{
-            position:relative;
-            right: 30%;
-        }
-        .h1__comunidad {
+        
+        bottom: 0%;
 
-            font-size: xx-large;
-            color: white;
-            text-align: center;
-    
-    
-        }
-    
-        .h2__comunidad {
-            font-size: large;
-            color: white;
-            text-align: center;
-    
-        }
+    }
 
-        .div__boton{
-            position: relative;
-            right: 5%;
-            grid-row-start: 3;
-        }
+
+    .div__footer {
+        position: absolute;
+        width: 100vw;
+        top: 94%;
+        color: azure; 
+        
+ 
+
+    }
+
+    .img__footer {
+        position:static;
+       
+
+       
+    }
+
+    .img__footer1 {
+        position: static;
+        
+    }
+
+
+
+
+    .h2__quienes {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        font-size: larger;
+        text-align: center;
+        color: aliceblue;
+        margin-left: 15%;
+        height: 100%;
+        width: 70%;
+    
+    }
+    
+    .quienes a{
+        grid-column-start: 1;
+        
+    }
+
+    
+
 }
