@@ -11,9 +11,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Open Sans";
-    position: relative;
+    font-family: "Open Sans";    
+
 }
+
+
+
 
 /* <!----------------------------------------// BODY SECCIONES //----------------------------------------> */
 .body {
@@ -24,7 +27,6 @@ body {
     background-attachment: fixed;
     font-family: "Open Sans";
 
-
 }
 
 .div__logo img {
@@ -33,38 +35,38 @@ body {
 
 /* <!----------------------------------------// Inicio //----------------------------------------> */
 
-
-.home__boton {
-    position: fixed;
-    left: 46%;
+.main a{
+    position:absolute;
     top: 55%;
-
+    left: 46%;
 }
-
-
-
-
-.home__descarga a {
-    text-decoration: none;
-    transition-duration: 1s;
-    font-size: x-large;
-    color: black;
-
-    background-color: rgb(255, 255, 255);
-}
-
-
-
 
 /* <!----------------------------------------// Footer //----------------------------------------> */
 
+
+footer{
+    text-align: center;  
+    width: 100%;
+    padding: 1%;
+    background-color: rgba(0, 38, 255, 0.137);
+    position:fixed;
+    bottom: 0%;
+}
+
+footer p{
+    color: aliceblue;
+}
+
+.div__footer{
+    margin-top: -2%;
+}
 
 .div__footer {
 
     position: fixed;
     width: 100vw;
     top: 97%;
-    color: azure;
+    color: rgba(240, 255, 255, 0.979);
 
 }
 
@@ -141,11 +143,10 @@ body {
 
 
 
-.section__tienda{
+.section__tienda {
     display: grid;
     justify-items: center;
     gap: 30%;
-    
 
 }
 
@@ -203,8 +204,7 @@ body {
 
 .h2__quienes {
     grid-column-start: 2;
-    grid-row-start: 2
-    ;
+    grid-row-start: 2;
     font-size: larger;
     text-align: center;
     color: aliceblue;
@@ -283,7 +283,7 @@ body {
     font-size: medium
 }
 
-select{
+select {
     margin-left: 25%;
 }
 
@@ -292,11 +292,30 @@ select{
 
 @media only screen and (max-width: 991px) {
 
+    /* <!----------------------------------------// Inicio //----------------------------------------> */
+
+.main a{
+    position:fixed;
+    top: 55%;
+    left: 43%;
+}
+
+body {
+    background: url(../assets/img/steam33.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans";
+    position: relative;
+}
+
+
     /* <!----------------------------------------// TIENDA //----------------------------------------> */
 
 
 
-    .section__tienda{
+    .section__tienda {
         display: grid;
         justify-items: center;
         gap: 5%;
@@ -371,48 +390,41 @@ select{
         font-size: medium
     }
 
-    /* <!----------------------------------------// QUIENES_SOMOS //----------------------------------------> */
 
-
-
-
-
-    body {
-        background: url(../assets/img/steam33.png);
-        background-position-x: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: "Open Sans";
-        position: relative;
-    }
 
     /* <!----------------------------------------// Footer //----------------------------------------> */
 
-
-    footer {
-        width: 100vw;
-        padding: 1%;        
-        background-color: rgb(0, 38, 255);
-        position: fixed;       
-        bottom: 0%;
-
+    .footer__comunidad--inicio--quienes--sesion{
+        position: fixed;
     }
 
-
-    .div__footer {
-
+    footer{
+        text-align: center;  
+        width: 100%;
+        padding: 1%;
+        background-color: rgba(0, 38, 255, 0.137);
+        position:sticky;
+        bottom: 0%;
+    }
+    
+    .img__footer {
         position: fixed;
-        width: 100vw;
-        top: 97%;
-        color: azure;
-
+        left: 95%;
+    
+    }
+    
+    .img__footer1 {
+        position: fixed;
+        left: 87%;
+    
     }
 }
 
 /*-----------------------MEDIA QUERIE--------------------------------------------*/
 
 @media only screen and (max-width: 567px) {
+
+    /* <!----------------------------------------// INICIO //----------------------------------------> */
 
     body {
         background: url(../assets/img/steamcelular.png);
@@ -423,6 +435,29 @@ select{
         font-family: "Open Sans";
         position: relative;
     }
+
+
+    /* <!----------------------------------------// QUIENES_SOMOS //----------------------------------------> */
+
+    .quienes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .h2__quienes {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        font-size: larger;
+        text-align: center;
+        color: aliceblue;
+        margin-left: 15%;
+        height: 100%;
+        width: 70%;
+
+    }
+
+
 
     /* <!----------------------------------------// TIENDA //----------------------------------------> */
 
@@ -467,103 +502,55 @@ select{
         justify-items: center;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 30%;
+        gap: 0%;
 
     }
 
     .busqueda__comunidad p {
         position: relative;
-        right: 30%;
-    }
-
-    .h1__comunidad {
-
-        font-size: xx-large;
-        color: white;
-        text-align: center;
-
-
-    }
-
-    .h2__comunidad {
-        font-size: large;
-        color: white;
-        text-align: center;
-
+        right: 35%;
     }
 
     .div__boton {
         position: relative;
-        right: 5%;
-        grid-row-start: 2;
+        right: 8%;
+        grid-row-start: 1;
         padding: 20%;
     }
 
     /* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
 
-    /* .main__cuenta .continuar {
-        background-color: azure;
-    } */
-
+    .main__cuenta {
+        margin-top: 1%;
+    }
 
 
     /* <!----------------------------------------// Footer //----------------------------------------> */
 
 
+    .footer__inicio{
+        position:fixed;
+    }
 
-    footer {
-        width: 100vw;                
-        background-color: rgb(0, 38, 255);
-        position: absolute;
-        
-        
+    footer{
+        text-align: center;  
+        width: 100%;
+        padding: 1%;
+        background-color: rgba(0, 38, 255, 0.137);
+        position:sticky;
         bottom: 0%;
-
     }
-
-
-    .div__footer {
-        position: absolute;
-        width: 100vw;
-        top: 94%;
-        color: azure; 
-        
- 
-
-    }
-
+    
     .img__footer {
-        position:static;
-       
-
-       
+        position: fixed;
+        left: 95%;
+    
     }
-
+    
     .img__footer1 {
-        position: static;
-        
-    }
-
-
-
-
-    .h2__quienes {
-        grid-column-start: 1;
-        grid-row-start: 4;
-        font-size: larger;
-        text-align: center;
-        color: aliceblue;
-        margin-left: 15%;
-        height: 100%;
-        width: 70%;
+        position: fixed;
+        left: 87%;
     
     }
-    
-    .quienes a{
-        grid-column-start: 1;
-        
-    }
-
-    
 
 }
