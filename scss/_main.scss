@@ -1,0 +1,286 @@
+@import "_mixin";
+@import "_extend";
+@import "_variables";
+/* <!----------------------------------------// Inicio //----------------------------------------> */
+
+.main{
+@extend .menu;
+}
+/* <!----------------------------------------// TIENDA //----------------------------------------> */
+
+
+.section__tienda {
+    display: grid;
+    justify-items: center;
+    gap: 30%;
+
+    .section__busqueda {
+
+        margin-top: 5%;
+
+        .imput__tienda--barra {
+            width: 50%;
+
+        }
+
+    }
+
+    p {
+        background-color: rgba(70, 11, 158, 0.288),;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+/* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
+
+.comunidad {
+    margin-top: 10%;
+    margin-left: 10%;
+
+        h1 {
+            font-size: xx-large;
+            color: map-get($map: $pallets, $key:primary);
+        }
+
+            h2 {
+                font-size: medium;
+                color: map-get($map: $pallets, $key:primary);
+            }
+}
+
+.busqueda__comunidad {
+
+    @include grilla(grid, 2, 1, 30%);
+    justify-items: center;
+    margin: 30px 1px;
+
+        p {
+            height: 40%;
+        }
+            input{
+                width: 170%;
+                background-color: map-get($map: $pallets, $key:primary);
+            }
+            
+                button{
+                    width: 150%;
+                    height: 80%;
+                    background-color: rgba(0, 4, 247, 0.39);
+                    border-radius: 50%;
+                }
+
+                    a{
+                        text-decoration: none;
+                        font-size: large;
+                        color: rgb(255, 255, 255);
+                    }
+
+}
+
+/* <!----------------------------------------// QUIENES SOMOS //----------------------------------------> */
+
+
+
+.quienes {
+    @include grilla(grid, 2, 1, 0%);
+        div{
+            margin-top: 10%;
+            height: 50%;
+            }
+            img{
+                margin-left: 10%;
+            }
+                h1{
+                    grid-column-start: 1;
+                    color: rgb(0, 162, 255);
+                    margin-left: 10%;
+                }
+                
+}
+
+.h2__quienes{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: larger;
+    text-align: center;
+    color: map-get($map: $pallets, $key:primary);
+    margin-left: 15%;
+    height: 100%;
+    width: 70%;
+}
+
+
+/* <!----------------------------------------// AYUDA //----------------------------------------> */
+
+.ayuda {
+    background-color: rgba(0, 250, 96, 0.452);
+
+        h1{
+            margin-left: 10%;
+            color: map-get($map: $pallets, $key:primary);
+        }
+            h2{
+                color: aliceblue;
+                font-size: medium;
+                margin-top: 1%;
+                margin-left: 10%;
+            }
+}
+.div {
+        text-align: center;
+        .div__input{
+            width: 75%;
+        }
+}
+.form {
+
+    text-align: center;
+    color: rgb(235, 243, 237);
+}
+
+/* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
+
+
+.section__sesion {
+    @include grilla(grid, 2, 1, 0%);
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+    color: map-get($map: $pallets, $key:primary);
+    font-size: larger;
+        a{
+            color: map-get($map: $pallets, $key:primary);
+        }
+}
+.p__terminos {
+    font-size: medium
+}
+select {
+    margin-left: 25%;
+}
+
+
+/*-----------------------MEDIA QUERIE--------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+
+    /* <!----------------------------------------// Inicio //----------------------------------------> */
+
+
+    .main a {
+        position: fixed;
+        top: 55%;
+        left: 43%;
+    }
+
+    /* <!----------------------------------------// TIENDA //----------------------------------------> */
+
+    .section__tienda {
+        gap: 5%;
+    }
+    .tienda__items{
+        @include grilla(grid, 2, 2, 1%);
+    }
+
+        /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
+        .busqueda__comunidad {
+            @include grilla(grid, 1, 1, 30%);
+            margin: 60px 1px;
+                p {
+                    right: 15%;
+                    position: relative;
+                }        
+        }        
+        .h1__comunidad{
+            text-align: center;
+
+        }
+        .h2__comunidad{
+            text-align: center;
+        }
+        
+}
+
+
+/*-----------------------MEDIA QUERIE--------------------------------------------*/
+
+@media only screen and (max-width: 567px) {
+
+
+        /* <!----------------------------------------// TIENDA //----------------------------------------> */
+
+
+        .section__tienda {
+            display: grid;
+            justify-items: center;
+                div{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 1%;
+                }
+        
+        }
+
+            /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
+    
+
+    .busqueda__comunidad {
+        @include grilla(grid, 1, 2, 5%);
+            p{
+                position: relative;
+                right: 35%;
+            }
+    }
+    .div__boton {
+        position: relative;
+        right: 10%;
+        top: 40%;
+    }
+
+        /* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
+
+        .main__cuenta {
+            margin-top: 1%;
+        }
+        /* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
+
+        .section__sesion {
+            @include grilla(grid, 1, 2, 0%);
+            margin-left: 5%;
+            text-align: center;
+            color: map-get($map: $pallets, $key:primary);
+            font-size: larger;
+        }
+    
+        .main__cuenta {
+            margin-top: -5%;
+        }
+    
+        .p__olvidado a {
+            color: map-get($map: $pallets, $key:primary);
+        }
+    
+        .p__terminos {
+            font-size: medium
+        }
+
+    
+            /* <!----------------------------------------// QUIENES_SOMOS //----------------------------------------> */
+
+    .quienes {
+        @include grilla(grid, 1, 1, 0%);
+    }
+
+    .h2__quienes {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        font-size: larger;
+        text-align: center;
+        color: map-get($map: $pallets, $key:primary);
+        margin-left: 15%;
+        height: 100%;
+        width: 70%;
+
+    }
+}

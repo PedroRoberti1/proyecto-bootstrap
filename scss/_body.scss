@@ -1,0 +1,67 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* <!----------------------------------------// BODY //----------------------------------------> */
+body {
+    background: url(../assets/img/steam.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans";    
+
+}
+
+
+
+
+/* <!----------------------------------------// BODY SECCIONES //----------------------------------------> */
+.body {
+    background: url(../assets/img/fondo_steam_2.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans";
+
+}
+
+.div__logo img {
+    width: 50%;
+}
+
+
+/*-----------------------MEDIA QUERIE--------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        background: url(../assets/img/steam33.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: "Open Sans";
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+
+body {
+    background: url(../assets/img/steamcelular.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans";
+    position: relative;
+}
+
+}

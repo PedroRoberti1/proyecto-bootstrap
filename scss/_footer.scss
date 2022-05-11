@@ -1,0 +1,47 @@
+/* <!----------------------------------------// Footer //----------------------------------------> */
+
+
+footer{
+    text-align: center;  
+    width: 100%;
+    padding: 1%;
+    background-color: rgba(0, 38, 255, 0.137);
+    position:fixed;
+    bottom: 0%;
+    p{
+    color: aliceblue;
+    }
+    div{
+        margin-top: -2%;
+        position: fixed;
+        width: 100vw;
+        top: 97%;
+        color: rgba(240, 255, 255, 0.979);
+    
+    }
+    img{
+        position: fixed;
+    }
+}
+.img__footer {    
+    left: 95%;
+}
+.img__footer1 {
+    left: 92%;
+}
+
+/*-----------------------MEDIA QUERIE--------------------------------------------*/
+
+@media only screen and (max-width: 567px) {
+
+.footer__sesion--quienes{
+    text-align: center;  
+    width: 100%;
+    padding: 1%;
+    background-color: rgba(0, 38, 255, 0.137);
+    position:sticky;
+    bottom: 0%;
+}
+
+}
+
