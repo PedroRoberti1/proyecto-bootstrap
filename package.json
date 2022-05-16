@@ -1,6 +1,9 @@
 {
+  "name": "Steam_roberti",
   "dependencies": {
     "boostrap": "^2.0.0",
     "bootstrap-scss": "^4.6.1"
-  }
+  },
+  "homepage": "https://github.com/PedroRoberti1/proyecto-sass-seo"
+
 }

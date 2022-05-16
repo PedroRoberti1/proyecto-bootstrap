@@ -1,10 +1,6 @@
-@import "_footer";
-@import "_body";
-// // @import "../node_modules/bootstrap-scss/bootstrap";
-@import "_main";
-@import "_mixin";
-@import "_extend";
-@import "_variables";
-
-
-
+@import "partials/_footer";
+@import "partials/_body";
+@import "partials/_main";
+@import "partials/_mixin";
+@import "partials/_extend";
+@import "variables/variables";

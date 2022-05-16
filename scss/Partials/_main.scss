@@ -1,36 +1,26 @@
 @import "_mixin";
 @import "_extend";
-@import "_variables";
+@import "../variables/variables";
 /* <!----------------------------------------// Inicio //----------------------------------------> */
-
 .main{
 @extend .menu;
 }
 /* <!----------------------------------------// TIENDA //----------------------------------------> */
-
-
-.section__tienda {
-    display: grid;
-    justify-items: center;
-    gap: 30%;
-
-    .section__busqueda {
-
+.tienda{
+    text-align: center;
+    p{
         margin-top: 5%;
-
-        .imput__tienda--barra {
+        background-color: rgba(0, 0, 255, 0.438);
+        .imput__tienda--barra{
             width: 50%;
-
         }
-
     }
 
-    p {
-        background-color: rgba(70, 11, 158, 0.288),;
-        width: 100%;
-        text-align: center;
+    section{
+        @include grilla(grid, 6, 1, 0%);
+        margin-top: 10%;
+        
     }
-
 }
 /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
 
@@ -176,11 +166,11 @@ select {
 
     /* <!----------------------------------------// TIENDA //----------------------------------------> */
 
-    .section__tienda {
-        gap: 5%;
-    }
-    .tienda__items{
-        @include grilla(grid, 2, 2, 1%);
+    .tienda{
+        section{
+            @include grilla(grid, 3, 3, 5%);
+            margin-top: 10%;
+        }
     }
 
         /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
@@ -211,15 +201,11 @@ select {
         /* <!----------------------------------------// TIENDA //----------------------------------------> */
 
 
-        .section__tienda {
-            display: grid;
-            justify-items: center;
-                div{
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    gap: 1%;
-                }
-        
+        .tienda {
+            section {
+                @include grilla(grid, 1, 1, 2%);
+                margin-top: 10%;
+            }
         }
 
             /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
