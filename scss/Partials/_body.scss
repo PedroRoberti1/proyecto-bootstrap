@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Open Sans";    
+    font-family: "Open Sans";
 
 }
 
@@ -54,14 +54,14 @@ body {
 
 @media only screen and (max-width: 567px) {
 
-body {
-    background: url(../assets/img/steamcelular.png);
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: "Open Sans";
-    position: relative;
-}
+    body {
+        background: url(../assets/img/steamcelular.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: "Open Sans";
+        position: relative;
+    }
 
 }

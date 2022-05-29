@@ -3,5 +3,5 @@
     display: $grid;
     grid-template-columns: repeat($columna, 1fr);
     grid-template-rows: repeat($fila, 1fr);
-    gap:$espacio;
+    gap: $espacio;
 }

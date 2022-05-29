@@ -1,26 +1,31 @@
 /* <!----------------------------------------// Footer //----------------------------------------> */
 
-footer{
+footer {
     @extend .footer;
-    position:fixed;
-    p{
-    color: aliceblue;
+    position: fixed;
+
+    p {
+        color: aliceblue;
     }
-    div{
+
+    div {
         margin-top: -2%;
         position: fixed;
         width: 100vw;
         top: 97%;
         color: rgba(240, 255, 255, 0.979);
-    
+
     }
-    img{
+
+    img {
         position: fixed;
     }
 }
-.img__footer {    
+
+.img__footer {
     left: 95%;
 }
+
 .img__footer1 {
     left: 92%;
 }
@@ -29,10 +34,8 @@ footer{
 
 @media only screen and (max-width: 567px) {
 
-    .footer__sesion--quienes{
-        position:sticky;
+    .footer__sesion--quienes {
+        position: sticky;
     }
-    
-    }
-    
 
+}
