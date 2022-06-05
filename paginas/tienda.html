@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Steam | Tienda</title>
     <link rel="icon" type="image/x-icon" href="../assets/icon/favicon.ico">
-</head> 
+</head>
 
 <!----------------------------------------// Barra de navegacion //---------------------------------------->
 
@@ -67,10 +67,11 @@
     <!----------------------------------------// Tienda //---------------------------------------->
 
     <main class="tienda">
-        <p class="section__busqueda">
-            <input class="imput__tienda--barra" type="search" name="busqueda_tienda" placeholder="Buscar en tienda...">
-            <input type="submit" value="Buscar">
-        </p>
+
+        <div class="field" id="searchform">
+            <input type="text" id="searchterm" placeholder="Buscar juegos en tienda..." />
+            <button type="button" id="search">Buscar</button>
+        </div>
         <section class="imagenes__tienda">
             <div class="tienda__item">
                 <a href="#"><img src="../assets/img/Juego1.jpg" alt="juego1" height="250" width="206"></a>
@@ -94,13 +95,13 @@
     </main>
     <!----------------------------------------// Footer //---------------------------------------->
     <footer>
-        <p><strong> © 2022 Valve Corporation. Todos los derechos reservados.</strong> </p>
         <div class="div__footer">
             <a href="https://www.facebook.com/Steam"> <img class="img__footer1" src="../assets/icon/ico_facebook.gif"
                     alt="facebook"></a>
             <a href="https://twitter.com/steam"> <img class="img__footer" src="../assets/icon/ico_twitter.gif"
                     alt="twitter"></a>
         </div>
+        <p><strong> © 2022 Valve Corporation. Todos los derechos reservados.</strong> </p>
     </footer>
     <!----------------------------------------// SCRIP //---------------------------------------->
 

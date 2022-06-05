@@ -1,28 +1,76 @@
 @import "_mixin";
 @import "_extend";
 @import "../variables/variables";
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 
 /* <!----------------------------------------// Inicio //----------------------------------------> */
 .main {
     @extend .menu;
 }
 
+.index__container {
+    @include grilla(grid, 3, 1, 15%);
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 64%;
+
+    div {
+        border-radius: 60px;
+        box-shadow: 0 0 15px #ddd;
+        background: #fff;
+        width: 85%;
+    }
+}
+
 /* <!----------------------------------------// TIENDA //----------------------------------------> */
+
+
 .tienda {
     text-align: center;
 
-    p {
-        margin-top: 5%;
-        background-color: rgba(0, 0, 255, 0.438);
+    .field {
+        display: flex;
+        position: realtive;
+        margin: 5em auto;
+        width: 70%;
+        flex-direction: row;
+        box-shadow:
+            1px 1px 0 rgb(0, 140, 255),
+            2px 2px 0 rgb(0, 140, 255),
+            3px 3px 0 rgb(0, 140, 255),
+            4px 4px 0 rgb(0, 140, 255),
+            5px 5px 0 rgb(0, 140, 255),
+            6px 6px 0 rgb(0, 140, 255),
+            7px 7px 0 rgb(0, 140, 255);
 
-        .imput__tienda--barra {
-            width: 50%;
+        input[type=text],
+        button {
+            display: block;
+            font: 1.2em 'Montserrat Alternates';
         }
+
+        input[type=text] {
+            flex: 1;
+            padding: 0.6em;
+            border: 0.2em solid rgb(0, 140, 255);
+        }
+
+        button {
+            padding: 0.6em 0.8em;
+            background-color: rgb(127, 171, 214);
+            color: rgb(252, 252, 252);
+            border: none;
+        }
+
     }
 
     section {
         @include grilla(grid, 6, 1, 0%);
+        grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
         margin-top: 10%;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgb(0, 162, 255);
 
     }
 }
@@ -30,8 +78,12 @@
 /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
 
 .comunidad {
-    margin-top: 10%;
-    margin-left: 10%;
+    position: relative;
+    margin-top: 5%;
+    width: 40%;
+    left: 11%;
+    align-items: center;
+
 
     h1 {
         font-size: xx-large;
@@ -55,7 +107,7 @@
     }
 
     input {
-        width: 170%;
+        width: 250%;
         background-color: map-get($map: $pallets, $key: primary);
     }
 
@@ -71,18 +123,34 @@
         font-size: large;
         color: rgb(255, 255, 255);
     }
-
 }
+
+.video {
+    width: 35%;
+    background-color: rgba(221, 221, 221, 0.219);
+    margin-left: 11%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(0, 162, 255);
+
+    video {
+        text-align: center;
+        position: relative;
+        width: 80%;
+        align-items: center
+    }
+}
+
 
 /* <!----------------------------------------// QUIENES SOMOS //----------------------------------------> */
 
-
-
 .quienes {
     @include grilla(grid, 2, 1, 0%);
+    margin-top: 2%;
 
     div {
-        margin-top: 10%;
+
+        // margin-top: 15%;
         height: 50%;
     }
 
@@ -109,11 +177,18 @@
     width: 70%;
 }
 
+.boostrap__quienes {
+    margin-top: 2%;
+}
+
+
 
 /* <!----------------------------------------// AYUDA //----------------------------------------> */
 
 .ayuda {
-    background-color: rgba(0, 250, 96, 0.452);
+    position: relative;
+    background-color: rgba(0, 250, 96, 0.637);
+    margin-top: 1%;
 
     h1 {
         margin-left: 10%;
@@ -180,35 +255,21 @@ select {
         left: 43%;
     }
 
+    .index__container {
+        @include grilla(grid, 3, 1, 5%);
+        position: fixed;
+        left: 5%;
+    }
+
     /* <!----------------------------------------// TIENDA //----------------------------------------> */
 
     .tienda {
         section {
             @include grilla(grid, 3, 3, 5%);
             margin-top: 10%;
+            grid-template-columns: repeat(auto-fit, minmax(186px, 2fr));
         }
     }
-
-    /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
-    .busqueda__comunidad {
-        @include grilla(grid, 1, 1, 30%);
-        margin: 60px 1px;
-
-        p {
-            right: 15%;
-            position: relative;
-        }
-    }
-
-    .h1__comunidad {
-        text-align: center;
-
-    }
-
-    .h2__comunidad {
-        text-align: center;
-    }
-
 }
 
 
@@ -216,39 +277,54 @@ select {
 
 @media only screen and (max-width: 567px) {
 
-
     /* <!----------------------------------------// TIENDA //----------------------------------------> */
 
 
     .tienda {
+        .field {
+            width: 100%
+        }
+
         section {
-            @include grilla(grid, 1, 1, 2%);
+            @include grilla(grid, 1, 1, 1%);
             margin-top: 10%;
         }
     }
 
     /* <!----------------------------------------// COMUNIDAD //----------------------------------------> */
 
+    .comunidad {
+        text-align: center;
+        left: 32%;
+
+        h1 {
+            font-size: large
+        }
+
+        h2 {
+            font-size: small
+        }
+    }
 
     .busqueda__comunidad {
         @include grilla(grid, 1, 2, 5%);
 
-        p {
-            position: relative;
-            right: 35%;
+
+        input {
+            width: 120%;
         }
     }
 
     .div__boton {
         position: relative;
-        right: 10%;
-        top: 40%;
+        top: 20%;
+        right: 5%;
     }
 
-    /* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
-
-    .main__cuenta {
-        margin-top: 1%;
+    .video {
+        position: absolute;
+        top: 120%;
+        left: 25%;
     }
 
     /* <!----------------------------------------// INICIAR SESION //----------------------------------------> */
@@ -262,7 +338,7 @@ select {
     }
 
     .main__cuenta {
-        margin-top: -5%;
+        margin-top: -10%;
     }
 
     .p__olvidado a {

@@ -19,6 +19,7 @@ footer {
 
     img {
         position: fixed;
+        width: 2%;
     }
 }
 
@@ -36,6 +37,18 @@ footer {
 
     .footer__sesion--quienes {
         position: sticky;
+
+        img {
+
+            width: 5%;
+        }
     }
 
+    .img__footer {
+        left: 95%;
+    }
+
+    .img__footer1 {
+        left: 87%;
+    }
 }
