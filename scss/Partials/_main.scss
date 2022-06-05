@@ -69,8 +69,12 @@
         @include grilla(grid, 6, 1, 0%);
         grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
         margin-top: 10%;
-        border-radius: 20px;
+        border-radius: 10px;
         box-shadow: 0 0 15px rgb(0, 162, 255);
+
+        img {
+            width: 90%;
+        }
 
     }
 }
@@ -288,6 +292,10 @@ select {
         section {
             @include grilla(grid, 1, 1, 1%);
             margin-top: 10%;
+
+            img {
+                width: 65%;
+            }
         }
     }
 

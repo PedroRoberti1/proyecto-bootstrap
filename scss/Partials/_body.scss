@@ -5,9 +5,6 @@
     box-sizing: border-box;
 
 }
-
-
-
 /* <!----------------------------------------// BODY //----------------------------------------> */
 body {
     background: url(../assets/img/steam.png);
@@ -22,11 +19,9 @@ body {
 }
 
 
-
-
 /* <!----------------------------------------// BODY SECCIONES //----------------------------------------> */
 .body {
-    background: url(/assets/img/fondo_steam_2.png);
+    background: url(../assets/img/fondo_steam_2.png);
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,8 +35,6 @@ body {
 .div__logo img {
     width: 50%;
 }
-
-
 /*-----------------------MEDIA QUERIE--------------------------------------------*/
 
 @media only screen and (max-width: 991px) {
